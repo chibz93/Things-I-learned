@@ -11,6 +11,7 @@ public class Test {
        int thisNum = yourNum + myNum;
        System.out.println("My number is: " + thisNum);
 
+       //Different primitive types
        byte age = 23;
        System.out.println("My age is: " + age);
 
@@ -22,6 +23,7 @@ public class Test {
        System.out.println("This is " + letter + " VAT of: " + vat + "%");
        System.out.println("The total price is: " + yourNum + vat / 100);
 
+       //ASCII notation for a colon
        char colon= '\u003A'; // = ":"
        System.out.println(colon);
 
@@ -91,11 +93,11 @@ public class Test {
             }
 
        //Logical operators + conversions
-       boolean isJava = true;
+       boolean isJava = false;
        int x = 30;
        int y = 15;
        int z = x + y;
-            if(isJava & z < 40){
+            if(isJava & z < 40)
                System.out.println("This is Java, but the number is greater than 40");
                if(!isJava ^ z > 40)
                   System.out.println("This may/may not be Java, but the number is greater than 40");
@@ -107,8 +109,65 @@ public class Test {
                    System.out.println("This is probably not Java");
                }
                System.out.println(isJava);
-            }
 
+
+        //While loop
+        int number1 = 1;
+        int number2 = 2;
+        int ans = 0;
+        while (number1 < 10) {
+            ans = number1 * number2;
+            number1++;
+            System.out.println(ans);
+        }
+
+        //Do-while loop
+        do{
+            System.out.print(number1);
+            System.out.print(" x 10 = ");
+            ans = number1 * 10;
+            number1++;
+            System.out.println(ans);
+        }while(number1 < 15);
+
+        //For loop
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 10; j++) {
+                i = i + 1;
+                j = j * 2;
+                System.out.println(i + j);
+            }
+        }
+
+        //Arrays
+        int[] myNumbers = {20,50,70,35,40};
+        System.out.println("My number is: " + myNumbers[2]);
+
+        //Switch
+        char vowel = 'y';
+        switch (vowel){
+            case 'a':
+                System.out.println("This vowel is: " + vowel);
+                break;
+            case 'e':
+                System.out.println("This vowel is: " + vowel);
+                break;
+            case 'i':
+                System.out.println("This vowel is: " + vowel);
+                break;
+            case 'o':
+                System.out.println("This vowel is: " + vowel);
+                break;
+            case 'u':
+                System.out.println("This vowel is: " + vowel);
+                break;
+            case 'y':
+                System.out.println("This letter : " + vowel + " could sometimes be considered a vowel");
+                break;
+            default:
+                System.out.println("This is not a vowel. This is either blank or a consonant");
+                break;
+        }
 
        }
 }
