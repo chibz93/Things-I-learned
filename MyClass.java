@@ -28,6 +28,30 @@ public class MyClass {
         students = 180;
     }
 
+    private boolean class1HasSeats(){
+        return class1Seats < 30;
+    }
+
+    private boolean class2HasSeats(){
+        return class2Seats < 30;
+    }
+
+    private boolean class3HasSeats(){
+        return class3Seats < 30;
+    }
+
+    private boolean class4HasSeats(){
+        return class4Seats < 30;
+    }
+
+    private boolean class5HasSeats(){
+        return class5Seats < 30;
+    }
+
+    private boolean class6HasSeats(){
+        return class6Seats < 30;
+    }
+
     //Show how many people are in Class 1
     public int getClass1Seats(){
         return class1Seats;
@@ -36,12 +60,12 @@ public class MyClass {
     //Adds people into Class 1
     public void addToClass1(){
         getClass1Seats();
-        while (class1Seats < 30){
+        if (class1HasSeats()){
             class1Seats++;
             students--;
             System.out.println(class1Seats);
         }
-        if(class1Seats == 30){
+        if(!class1HasSeats()){
             classIsFull();
         }
     }
@@ -53,12 +77,12 @@ public class MyClass {
 
     //Adds people into Class 2
     public void addToClass2(){
-        while (class2Seats < 30){
+        if (class2HasSeats()){
             class2Seats++;
             students--;
             System.out.println(class2Seats);
         }
-        if(class2Seats == 30){
+        if(!class2HasSeats()){
             classIsFull();
             return;
         }
@@ -71,12 +95,12 @@ public class MyClass {
 
     //Adds people into Class 3
     public void addToClass3(){
-        while (class3Seats < 30){
+        if(class3HasSeats()){
             class3Seats++;
             students--;
             System.out.println(class3Seats);
         }
-        if(class3Seats == 30){
+        if(!class3HasSeats()){
             classIsFull();
             return;
         }
@@ -89,12 +113,12 @@ public class MyClass {
 
     //Adds people into Class 4
     public void addToClass4(){
-        while (class4Seats < 30){
+        if (class4HasSeats()){
             class4Seats++;
             students--;
             System.out.println(class4Seats);
         }
-        if(class4Seats == 30){
+        if(!class4HasSeats()){
             classIsFull();
             return;
         }
@@ -107,12 +131,12 @@ public class MyClass {
 
     //Adds people into Class 5
     public void addToClass5(){
-        while (class5Seats < 30){
+        if (class5HasSeats()){
             class5Seats++;
             students--;
             System.out.println(class5Seats);
         }
-        if(class5Seats == 30){
+        if(!class5HasSeats()){
             classIsFull();
             return;
         }
@@ -125,12 +149,12 @@ public class MyClass {
 
     //Adds people into Class 6
     public void addToClass6(){
-        while (class6Seats < 30){
+        if (class6HasSeats()){
             class6Seats++;
             students--;
             System.out.println(class6Seats);
         }
-        if(class6Seats == 30){
+        if(!class6HasSeats()){
             classIsFull();
             return;
         }
