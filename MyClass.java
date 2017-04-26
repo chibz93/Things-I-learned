@@ -15,10 +15,10 @@ public class MyClass extends School{
     private int class4Seats;
     private int class5Seats;
     private int class6Seats;
-    private Student;
 
     //initialize classrooms seats and no. of students
     public MyClass(){
+        super.getTeacher();
         classes = 6;
         class1Seats = 0;
         class2Seats = 0;
