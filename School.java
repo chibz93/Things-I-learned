@@ -25,5 +25,14 @@ public class School {
         this.classNo = classNo;
     }
 
+    public String getTeacherClass(){
+        StringBuilder st = new StringBuilder(50);
+        String Teachers = "Tim";
+        int classNo = 5;
+        st.append("The teacher ");
+        st.append(Teachers);
+        st.append(" is currently in Class ");
+        st.append(classNo);
+    }
 
 }
