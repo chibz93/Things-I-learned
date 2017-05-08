@@ -169,5 +169,7 @@ public class Test {
                 break;
         }
 
+        //Math.round testing
+        System.out.println(Math.round(2 * 9.8d));
        }
 }
