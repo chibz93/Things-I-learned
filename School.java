@@ -4,7 +4,7 @@ package com.company;
  * Created by Chibuzo Nwobiri on 12/04/2017.
  */
 public class School {
-    private static int final noOfClasses = 6;
+    private final int noOfClasses = 6;
     private String[] Teachers;
     private int classNo;
 
@@ -25,7 +25,7 @@ public class School {
         this.classNo = classNo;
     }
 
-    public String getTeacherClass(){
+    public void getTeacherClass(){
         StringBuilder st = new StringBuilder(50);
         String Teachers = "Tim";
         int classNo = 5;
@@ -33,7 +33,6 @@ public class School {
         st.append(Teachers);
         st.append(" is currently in Class ");
         st.append(classNo);
-        System.out.println(getTeacherClass());
     }
 
 }

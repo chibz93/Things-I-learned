@@ -8,7 +8,7 @@ public class Teacher {
     private String lesson;
     private int classNo;
 
-    public Teacher(String teacher, String lesson){
+    public Teacher(){
         this.classNo = classNo;
         this.teacher = teacher;
         this.lesson = lesson;
