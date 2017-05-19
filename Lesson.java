@@ -6,8 +6,8 @@ package com.company;
 public class Lesson extends Teacher {
     private String subject;
     private int period;
-    String[] Day = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
-    String[] Subject = {"English", "Maths", "Science", "History", "IT"};
+    String[] Day = new String[]{"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+    String[] Subject = new String[]{"English", "Maths", "Science", "History", "IT", "French", "Spanish"};
 
     public Lesson(){
         super();
@@ -18,20 +18,36 @@ public class Lesson extends Teacher {
         return subject;
     }
 
-    public void setSubject(){
-        this.subject = subject;
+    public String[] setSubject(){
+        for(int i = 0; i < Subject.size(); i++) {
+            if (i != Integer.parseInt(Day[0])) {
+                i++;
+            } else {
+                this.subject = subject;
+            }
+        }
+        return new String[0];
     }
 
     public String getDay(){
-
+        return Day[];
     }
 
-    public String setDay(){
-        if()
+    public String[] setDay(){
+        for(int i = 0; i < Subject.size(); i++) {
+            if (i != Integer.parseInt(Day[0])) {
+                i++;
+            } else {
+                this.subject = subject;
+            }
+        }
+        return new String[0];
     }
 
     public boolean hasAssignments(){
         boolean hasAssignments = false;
-        if(Day[] == "Friday"){}
+        for(int i = 0; i < Day.size; i++){
+            
+        }
     }
 }
