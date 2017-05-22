@@ -19,7 +19,7 @@ public class Lesson extends Teacher {
     }
 
     public String[] setSubject(){
-        for(int i = 0; i < Subject.size(); i++) {
+        for(int i = 0; i < Subject.length; i++) {
             if (i != Integer.parseInt(Day[0])) {
                 i++;
             } else {
@@ -34,7 +34,7 @@ public class Lesson extends Teacher {
     }
 
     public String[] setDay(){
-        for(int i = 0; i < Subject.size(); i++) {
+        for(int i = 0; i < Subject.length; i++) {
             if (i != Integer.parseInt(Day[0])) {
                 i++;
             } else {
@@ -46,8 +46,8 @@ public class Lesson extends Teacher {
 
     public boolean hasAssignments(){
         boolean hasAssignments = false;
-        for(int i = 0; i < Day.size; i++){
-            
+            for(int i = 0; i < Day.length; i++){
+
         }
     }
 }

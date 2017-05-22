@@ -6,7 +6,7 @@ package com.company;
  * "If classes are full, then they are to be transferred into another class" is the basic
  * aim.
  */
-public class MyClass extends School{
+public class MyClass extends School {
     private int classes;
     private int students;
     private int class1Seats;
@@ -161,6 +161,8 @@ public class MyClass extends School{
             return;
         }
     }
+
+
 
 
     public void classIsFull(){

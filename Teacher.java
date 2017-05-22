@@ -7,6 +7,7 @@ public class Teacher extends School {
     private String teacher;
     private String lesson;
     private int classNo;
+    private int period;
 
     public Teacher(){
         this.classNo = classNo;
@@ -21,5 +22,28 @@ public class Teacher extends School {
     public Teacher(int classNo) {
     }
 
+    public int getCurrentPeriod(){
+        return period;
+    }
+
+    public void setCurrentPeriod() {
+        if (period > 6 || period < 1) {
+            System.out.println("Not a valid value");
+        } else {
+            this.period = period;
+        }
+    }
+
+    public String getCurrentLesson(){
+        return lesson;
+    }
+
+    public void setCurrentLesson() {
+        if (period > 6 || period < 1) {
+            System.out.println("Not a valid value");
+        } else {
+            this.period = period;
+        }
+    }
 
 }
