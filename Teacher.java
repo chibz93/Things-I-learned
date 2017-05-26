@@ -1,18 +1,20 @@
 package com.company;
 
+import java.util.Arrays;
+
 /**
- * Created by Chibuzo Nwobiri on 04/04/2017. Here, I'm trying to chain constructors
+ * Created by Chibuzo Nwobiri on 04/04/2017. Here in the class I'm trying to chain constructors
  */
 public class Teacher extends School {
-    private String teacher;
-    private String lesson;
-    private int classNo;
+    String[] teacher = new String[] {"Mason","Jackson","Myers","Smith","York","Daniels"};
+    String[] Subject = new String[]{"English", "Maths", "Science", "History", "IT", "French", "Spanish"};
+    String[] classNo = new String[]{"Class1","Class2","Class3","Class4","Class5","Class6"};
     private int period;
 
     public Teacher(){
         this.classNo = classNo;
         this.teacher = teacher;
-        this.lesson = lesson;
+        this.Subject = Subject;
     }
 
     public Teacher(String teacher, int classNo){
@@ -34,10 +36,6 @@ public class Teacher extends School {
         }
     }
 
-    public String getCurrentLesson(){
-        return lesson;
-    }
-
     public void setCurrentLesson() {
         if (period > 6 || period < 1) {
             System.out.println("Not a valid value");
@@ -46,7 +44,13 @@ public class Teacher extends School {
         }
     }
 
-    public Timetable(){
+    public void getSchedule(){
+        System.out.println("Here is the schedule for " + Arrays.toString(teacher) + ":");
+        for(int i = 0; i < teacher.length; i++) {
+            System.out.println(Arrays.toString(teacher) + ": " + Arrays.toString(classNo));
+            System.out.println("Subject: " + Arrays.toString(Subject));
+            System.out.println("Period: " + period);
+        }
 
     }
 }
