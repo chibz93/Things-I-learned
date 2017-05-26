@@ -6,6 +6,7 @@ import java.util.Arrays;
  * Created by Chibuzo Nwobiri on 11/05/2017.
  */
 public class Student extends School{
+    //Some arrays that were used for gathering data and making "timetables"
     String[] name = new String[]{"Joey", "Melanie", "Marc", "Jessie", "Mike"};
     int[] year = new int[]{7,8,9,10,11};
     String[] Subject = new String[]{"English", "Maths", "Science", "History", "IT", "French", "Spanish"};
@@ -16,6 +17,7 @@ public class Student extends School{
         this.name = name;
     }
 
+    //Get the schedule for a student
     public void timeTable(){
         System.out.println("Here is the timetable for " + Arrays.toString(name) + ":");
         System.out.println("Subject: " + Arrays.toString(Subject));

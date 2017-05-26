@@ -8,6 +8,7 @@ public class School {
     private String[] Teachers;
     private int classNo;
 
+    //Arrays for the school class
     public School(){
         String Teachers[] = new String[]{"Tim", "Zara", "Mike", "Trish", "Millie", "Clark"};
         int classNo[] = new int[]{1,2,3,4,5,6};
@@ -17,6 +18,7 @@ public class School {
         return Teachers[3];
     }
 
+    //Setter to assign a class number. Must be between 1 and 6
     public void assignClassNo(){
         if(classNo > 6 || classNo < 1){
             System.out.println("Not a valid classroom number");
@@ -25,6 +27,7 @@ public class School {
         this.classNo = classNo;
     }
 
+    //Something I've tried to do with "append"
     public void getTeacherClass(){
         StringBuilder st = new StringBuilder(50);
         String Teachers = "Tim";

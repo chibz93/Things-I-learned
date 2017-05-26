@@ -20,7 +20,7 @@ public class Lesson extends Teacher {
 
     public String[] setSubject(){
         for(int i = 0; i < Subject.length; i++) {
-            if (i != Integer.parseInt(Day[0])) {
+            if (i != Integer.parseInt(Subject[0])) {
                 i++;
             } else {
                 this.subject = subject;
@@ -29,25 +29,26 @@ public class Lesson extends Teacher {
         return new String[0];
     }
 
-    public String getDay(){
-        return Day[];
-    }
+    //public String getDay(){
+    //    return Day[];
+    //}
 
     public String[] setDay(){
-        for(int i = 0; i < Subject.length; i++) {
+        for(int i = 0; i < Day.length; i++) {
             if (i != Integer.parseInt(Day[0])) {
                 i++;
             } else {
-                this.subject = subject;
+                this.Day = Day;
             }
         }
         return new String[0];
     }
 
-    public boolean hasAssignments(){
-        boolean hasAssignments = false;
-            for(int i = 0; i < Day.length; i++){
-
-        }
-    }
+    //Tried doing a statement to see if there is an assignment given for a subject
+    //public boolean hasAssignments(){
+    //    boolean hasAssignments = false;
+    //        for(int i = 0; i < Day.length; i++){
+//
+    //    }
+   // }
 }

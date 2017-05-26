@@ -162,9 +162,7 @@ public class MyClass extends School {
         }
     }
 
-
-
-
+    //Default statement for when a class is full
     public void classIsFull(){
         System.out.println("This class is full");
     }
