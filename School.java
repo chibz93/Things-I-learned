@@ -18,6 +18,13 @@ public class School {
         return Teachers[3];
     }
 
+    public enum SchoolRoles(){
+        SubstituteTeacher,
+                HeadTeacher,
+        Teacher,
+        Student
+    }
+
     //Setter to assign a class number. Must be between 1 and 6
     public void assignClassNo(){
         if(classNo > 6 || classNo < 1){
